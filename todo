@@ -1,0 +1,1 @@
+alter table h_products  add column isswiggy bool DEFAULT false;

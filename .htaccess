@@ -1,0 +1,11 @@
+
+RewriteEngine On
+RewriteBase /heavenonmyearth.com/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteRule . /heavenonmyearth.com/index.php [L]
+Options -Indexes 
+IndexOptions -FancyIndexing
+IndexIgnore *.zip *.txt
